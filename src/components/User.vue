@@ -1,8 +1,7 @@
 <script setup>
 
 defineProps({
-  name: String,
-  handle: String,
+  userData: Object,
 });
 
 </script>
@@ -10,8 +9,8 @@ defineProps({
 <template>
 
   <span class="user">
-    <span class="name"> {{ name }}</span>
-    <span class="handle">{{ handle }}</span>
+    <span class="name">{{ userData.name }}</span>
+    <span class="handle">{{ userData.handle }}</span>
   </span>
 
 </template>

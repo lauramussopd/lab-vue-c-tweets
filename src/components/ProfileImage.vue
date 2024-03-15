@@ -1,10 +1,9 @@
 <script setup>
-defineProps({
-  imagePath: String
-})
-
+    defineProps ({
+        image: String,
+    })
 </script>
 
 <template>
-  <img :src="imagePath" class="profile" alt="profile" />
+    <img :src="image" class="profile" alt="profile"/>
 </template>
