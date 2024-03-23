@@ -7,22 +7,22 @@ import User from './User.vue';
 import Actions from './Actions.vue';
 
 defineProps({
-  tweet: Object
+  content: Object
 })
 
 </script>
 
 <template>
   <div class="tweet">
-    <ProfileImage :image="tweet.user.image" />
+    <ProfileImage :image="content.user.image" />
 
     <div class="body">
       <div class="top">
-        <User :userData="tweet.user" />
-        <Timestamp :time="tweet.timestamp" />
+        <User :userData="content.user" />
+        <Timestamp :time="content.timestamp" />
       </div>
 
-      <Message :message="tweet.message" />
+      <Message :message="content.message" />
 
       <Actions />
 
